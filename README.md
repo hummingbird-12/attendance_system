@@ -1,5 +1,4 @@
 # Attendance System
----
 
 ## Description
 Back-end of an attendance system for Ubuntu Server
@@ -22,5 +21,7 @@ Back-end of an attendance system for Ubuntu Server
 
 ## About the Developer
 Inho Kim
+
 Computer Science and Engieneering
+
 Undergraduate School @ Sogang University
