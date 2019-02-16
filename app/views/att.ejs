@@ -1,0 +1,28 @@
+<%- include layouts/header.ejs %>
+<div class="table-wrapper">
+    <% if (att.length > 0) { %>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">CLASS</th>
+                    <th scope="col">TEACHER</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">PHONE</th>
+                    <th scope="col">ATTENDANCE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% att.forEach((entry, index) => { %>
+                    <tr>
+                        <th scope="row"><%= entry.grade + "-" + entry.class %></th>
+                        <td><%= entry.teacher == "" ? "N/A" : entry.teacher %></td>
+                        <td><%= entry.name %></td>
+                        <td><%= entry.phone %></td>
+                        <td><%= entry.attendance %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } %>
+</div>
+<%- include layouts/footer.ejs %>
